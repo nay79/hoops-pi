@@ -1,0 +1,28 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  background: #000;
+  display: flex;
+}
+
+.container {
+  align-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  margin: 50px;
+  padding: 50px;
+}
+
+#score {
+  color: #fff;
+  font-family: 'ZCOOL QingKe HuangYou', sans-serif;
+  font-size: 140px;
+}
