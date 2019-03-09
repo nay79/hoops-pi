@@ -4,7 +4,7 @@
 
     ws.onopen = function () {
         console.log('Websocket is open');
-        ws.send('Hi from React.');
+        ws.send('Hi from HoopsPi!');
         document.getElementById('score').innerHTML = score;
     };
 
@@ -14,7 +14,6 @@
             document.getElementById('score').innerHTML = score;
         }
         console.log('Message was ', event.data);
-        //document.getElementById('score').innerHTML = event.data;
     };
 
     ws.onerror = function(error) {
