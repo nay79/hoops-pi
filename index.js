@@ -52,7 +52,7 @@ const watchHCSR04 = () => {
       const diff = (endTick >> 0) - (startTick >> 0);
       let distance = diff / 2 / MICROSECONDS_PER_CM;
       let currentScoreTime = new Date();
-      console.log(currentScoreTime, lastScoreTime, distance);
+      console.log(distance);
       if (distance < 11 && (currentScoreTime - lastScoreTime > 1000)) {
         lastScoreTime = currentScoreTime;
         broadcast('SCORE:' + (diff / 2 / MICROSECONDS_PER_CM));
